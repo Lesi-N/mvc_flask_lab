@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Generate your follower map{% endblock%}
+{% block body %}
+<h1>Get your follower map!</h1>
+<form action="/input/map" method="post">
+    <p>
+        <input name="handle" placeholder="Twitter handle" type="text"/>
+        <input name="bearer" placeholder="Bearer token" type='text'/>
+    </p>
+    <p><input type="submit" value="Generate map"/></p>
+</form>
+{% endblock %}

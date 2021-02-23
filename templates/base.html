@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{% endblock %}</title>
+
+    </head>
+    <style>
+        body {
+            background-color: #a788ab;
+            text-align: center;
+            margin-top: 17rem;
+        }
+        h1 {
+        color: black;
+        font-family: serif;
+        font-size: 300%;
+        }
+        p {
+        color: #2c253d;
+        font-family: serif;
+        font-size: 300%;
+        }
+    </style>
+    <body>
+        {% block body%}
+        {% endblock %}
+    </body>
+</html>
